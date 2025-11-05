@@ -33,15 +33,16 @@ print('alle fingerfood rezepte gefunden')
 
 #b)
 
-for rezept in rezepteFingerfood:
+for rezept in rezepteFingerfood:   #iteriert über alle rezepte mit dem schlagwort fingerfood (in der in a )
   for zutat in rezept[1]:
     if not (zutat[1] in zutaten):
       zutaten.append(zutat[1])
       print(zutaten,  '\n', '====', '\n')
 
 #c)
-
+index=0
 for zutat in zutaten:
+  index += 1
   menge = 0
   for rezept in rezepteFingerfood:
     for rezeptZutat in rezept[1]:
