@@ -28,6 +28,5 @@ count_letters(text:string, wörterbuch: dict)
 def count_letters(text, wörterbuch):
   if len(text) == 0: #Rekursionsanker
     return 0
-  else 
-
-  
+  else:
+    return 
