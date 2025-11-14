@@ -13,6 +13,39 @@ Effekt:
 Ergebnis:
 '''
 
+#For Schleife
+def multiplyAllBy_F(xs,n):
+    erg = []
+    for elem in xs:
+        produkt = elem * n
+        erg.append(produkt)
+    return erg
+print(multiplyAllBy_F([1,2,3],4))
+
+#While Schleife
+def multiplyAllBy_W(xs,n):
+    erg = []
+    i = 0
+    while i < len(xs):
+        elem = xs[i]
+        produkt = elem * n
+        erg.append(produkt)
+        i += 1
+    return erg
+print(multiplyAllBy_W([1,2,3],4))
+
+#Rekursion
+def multiplyAllBy_R(xs,n):
+    if len(xs) == 0:
+        return[]
+
+    headerg = xs[0]*n
+    tailerg = multiplyAllBy_R(xs[1:],n)
+
+    return [headerg] + tailerg
+
+print(multiplyAllBy_R([1,2,3],4))
+
 #b)
 '''
 Signatur:
