@@ -3,14 +3,10 @@ import math
 #a)
 
 '''
-Signatur:
-Eingabe: list(int)
-Ausgabe:
-
-Spezifikation:
-Voraussetzung:
-Effekt:
-Ergebnis:
+Signatur: multiplyAllBy_X(xs:list[int], n: int) -> list[int]
+Voraussetzung: Liste xs besteht aus ganzen Zahlen und n ist eine ganze Zahl ungleich 0
+Effekt: -
+Ergebnis: Ausgabe ist eine Liste in der die Elemente der ersten Liste mit n multipliziert stehen
 '''
 
 #For Schleife
@@ -48,11 +44,7 @@ print(multiplyAllBy_R([1,2,3],4))
 
 #b)
 '''
-Signatur:
-Eingabe: Integer
-Ausgabe: Integer
-
-Spezifikation:
+lovedDigits_X(n: int)-> int
 Voraussetzung: Eingabe ist Int
 Effekt: - 
 Ergebnis: Zahl mit den verliebten Ziffern der Eingabe (Vorzeichen wird erhalten)
