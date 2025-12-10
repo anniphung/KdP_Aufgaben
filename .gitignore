@@ -1,1 +1,3 @@
 .DS_Store
+.scala-build/
+.metals
