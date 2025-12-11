@@ -6,4 +6,5 @@ def isSorted(list: List[Int]): Boolean =
     case x::y::xs => false  //Rekursionsanker
 
 println(isSorted(List(1,2,3,4,5)))
-    
+
+//Testcase: Liste -> leer, ein elem, große liste, unterschiedliche sortierungen?     
